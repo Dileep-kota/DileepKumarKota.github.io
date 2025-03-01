@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from srivastavbudugutta.github.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Oct 2023 09:33:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JBZDSM3YFG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JBZDSM3YFG');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>Dileep Kumar Kota Portfolio Website</title>
+
+<!-- Fav Icon -->
+<link rel="icon" href="assets/images/Dileep_kota_logo.png" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link href="assets/css/font-awesome-all.css" rel="stylesheet">
+<link href="assets/css/flaticon.css" rel="stylesheet">
+<link href="assets/css/owl.css" rel="stylesheet">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet">
+<link href="assets/css/imagebg.css" rel="stylesheet">
+<link href="assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
+<link href="assets/css/switcher-style.css" rel="stylesheet">
+<link href="assets/css/rtl.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="path/to/owl.carousel.min.html">
+<link rel="stylesheet" href="path/to/owl.theme.default.min.html">
+<script src="../cdn.jsdelivr.net/npm/sass.js/dist/sass.min.js"></script>
+
+<script>
+    // $(document).ready(function() {
+    // 	$('.maximize-image').click(function(e) {
+    // 		e.preventDefault();
+    // 		$(this).closest('.project').toggleClass('maximized');
+    // 	});
+    
+    // 	$(document).click(function(e) {
+    // 		if (!$(e.target).closest('.project').length && !$(e.target).hasClass('maximize-image')) {
+    // 			$('.project').removeClass('maximized');
+    // 		}
+    // 	});
+    // });
+
+    function showPopup(imageUrl) {
+const popup = document.getElementById('popup');
+const popupImg = document.getElementById('popupImg');
+popupImg.src = imageUrl;
+popup.style.display = 'flex';
+document.body.style.overflow = 'hidden';
+}
+$(document).ready(function() {
+      $(".testimonial-carousel").owlCarousel({
+        items: 1,
+        dots: true,
+        nav: false,
+        dotsContainer: ".testimonial-navigation",
+      });
+    });
+
+// Function to hide the popup
+function hidePopup() {
+const popup = document.getElementById('popup');
+popup.style.display = 'none';
+document.body.style.overflow = 'auto';
+}
+/**
+* Testimonials slider
+*/
+new Swiper('.testimonials-slider', {
+speed: 600,
+loop: true,
+autoplay: {
+  delay: 5000,
+  disableOnInteraction: false
+},
+slidesPerView: 'auto',
+pagination: {
+  el: '.swiper-pagination',
+  type: 'bullets',
+  clickable: true
+}
+});
+
+
+
+    </script>
+<style>
+
+
+.popup {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 9999;
+display: none;
+justify-content: center;
+align-items: center;
+}
+
+.popup-content {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+max-width: 90%;
+max-height: 90%;
+}
+
+.popup-img {
+max-width: 85%;
+max-height: 70%;
+}
+.close {
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+z-index: 1;
+}
+.project:hover::after {
+content: "Click Title to Redirect" ;
+display: block;
+
+position: absolute;
+bottom: 30px;
+left: 50%;
+transform: translateX(-50%);
+background-color: rgba(0, 0, 0, 0.7);
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+white-space: nowrap;
+font-size: 12px
+}
+
+.project:hover::before {
+content: "Click on the Image to Maximize";
+display: block;
+position: absolute;
+font-size: 12px;
+bottom: 2px;
+left: 50%;
+transform: translateX(-50%);
+background-color: rgba(0, 0, 0, 0.7);
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+white-space: nowrap;
+/* Additional styles for the first statement */
+}
+
+.project.only-image:hover::after{
+    content: "Click on the Image to Maximize";
+      display: block;
+      position: absolute;
+      font-size: 12px;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.project.no-text:hover::after,
+.project.no-text:hover::before {
+content: none;
+}
+
+</style>
+
+</head>
+
+
+<!-- page wrapper -->
+<body class="boxed_wrapper ltr">
+    <div class="preloader"></div>
+
+
+    <!-- main header -->
+    <header class="main-header">
+        <div class="outer-container">
+            <div class="header-upper clearfix">
+                <div class="outer-box pull-left">
+                    <div class="logo-box pull-left">
+                        <figure class="logo"><a href="#"><img src="assets/images/Dileep_kota_name.png" alt=""></a></figure>
+                    </div>
+                    <div class="menu-area pull-left">
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li><a href="#">Home</a></li> 
+                                    <li><a href="#about-me">About</a></li>
+                                    <li><a href="#research">Certifications</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#awards">Awards</a></li>
+                                    <li><a href="#testimonial">Testimonials</a></li>                              
+                                    <li><a href="#contact">Contact</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sticky Header-->
+        <div class="sticky-header">
+            <div class="container clearfix">
+                <figure class="logo-box"><a href="#"><img src="assets/images/Dileep_kota_name.png" alt=""></a></figure>
+                <div class="menu-area">
+                    <nav class="main-menu clearfix">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-header end -->
+
+
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="#"><img src="assets/images/Dileep_kota_name.png" alt="" title=""></a></div>
+        </nav>
+    </div>
+
+
+    
+    <!-- banner-section -->
+    <section class="banner-section" >
+        <div class="pattern-box" >
+            <div class="pattern-1 wow slideInDown" data-wow-delay="500ms" data-wow-duration="1500ms" style="background-image: url(assets/images/pattern-1.png);"></div>
+            <div class="pattern-2" style="background-image: url(assets/images/pattern-2.png);"></div>
+        </div>
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-7 col-md-12 col-sm-12 content-column">
+                    <div class="content-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <h1>Hello! I am</h1>
+                        <h1>Dileep Kumar Kota</h1>
+                        <h1 class="animation_text"><span class="animation_text_word"></span></h1>
+                        
+                        <div class="btn-box">
+                            <a href="#about-me" class="theme-btn style-one">More About Me</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 image-column">
+                    <div class="image-box wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <figure class="image image-1"><img src="assets/images/banner-1.png" alt=""></figure>
+                        <figure class="image image-2 float-bob-y"><img src="assets/images/banner-2.png" alt=""></figure>
+                        <figure class="image image-3 wow slideInDown" data-wow-delay="500ms" data-wow-duration="1500ms"><img src="assets/images/banner-5.png" alt=""></figure>
+                        <figure class="image image-4"><img src="assets/images/banner-3.png" alt=""></figure>
+                        <figure class="image image-5 rotate-me"><img src="assets/images/banner-4.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner-section end -->
+<!-- about-section -->
+<section id="about-me" ></section>
+<section class="project-section" id="about-me">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-6 col-md-6 col-sm-12 image-column">
+                <div id="image_block_01">
+                    <!-- <div class="image-box wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"> -->
+                        <img src="assets/images/Dileep_pic.png" alt="">
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                <div id="content_block_01">
+                    <div class="content-box">
+                        <div class="sec-title wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <p style="align-content: center;">About Me</p>
+                            
+                        </div>
+                        <div class="text wow slideInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <p style="text-align: justify;">I am a dedicated and innovative software engineer with nearly <script>document.write(new Date().getFullYear() - 2018);</script> 
+                                years of experience in the technology industry. Industrial Experience in the domain of banking financial sector 
+								 Software Development. My journey in this field has allowed me to work on a wide range of projects, develop strong 
+                                 technical skills, and continually expand my knowledge. I have built a strong reputation for problem-solving and
+								  enhancing customer satisfaction throughout my career. With a proven track record
+								   of surpassing goals, I prioritize tasks effectively to boost efficiency and productivity, 
+								   thereby strengthening the organizational brand. Possessing a versatile 
+								   skill set, I am willing to take on additional responsibilities to meet team goals and contribute 
+								   to diverse fields.</p>
+                                <!-- <br> -->
+                                <style>
+                                    /* Custom styles for the icons */
+                                    .fancy-icon {
+                                      color: #0cb2f4; /* Set custom color */
+                                      transition: all 0.3s ease; /* Add smooth transition */
+                                    }
+                                  
+                                    .fancy-icon:hover {
+                                      transform: scale(1.2); /* Apply scale transformation on hover */
+                                      color: #2807ff; /* Change color on hover */
+                                      text-shadow: 0 0 5px rgba(136, 196, 241, 0.7); /* Add a subtle text shadow on hover */
+                                    }
+                                  </style>
+                                  
+                                  <ul style="display: flex; justify-content: center; width: 100%; padding-top: 15px;">
+                                    <li class="ftco-animate" style="margin-right: 10px;">
+                                      <a href="https://www.linkedin.com/in/dileep-kumar-kota-4756b21b1/" target="_blank">
+                                        <span class="fab fa-linkedin fa-3x fancy-icon"></span>
+                                      </a>
+                                    </li>
+                                    <li class="ftco-animate" style="margin-right: 10px;">
+                                      <a href="https://github.com/Dileep-kota" target="_blank">
+                                        <span class="fab fa-github fa-3x fancy-icon"></span>
+                                      </a>
+                                    </li>
+                                    <!-- <li class="ftco-animate" style="margin-right: 10px;">
+                                      <a href="https://medium.com---" target="_blank">
+                                        <span class="fab fa-medium fa-3x fancy-icon"></span>
+                                      </a>
+                                    </li> -->
+                                  </ul>
+                                  
+                                
+                        </div>
+                        
+
+                        
+                        
+                        <div class="btn-box wow slideInUp text-center" data-wow-delay="900ms" data-wow-duration="1500ms"><a href="#education-and-experience" class="theme-btn style-one">Know More</a></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about-section end -->
+
+<section class="project-section">
+    <!-- <div class="sec-title text-center">
+        <h2 class="mb-4">Education</h2>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm ftco-animate text-center mt-1">
+                <a class="partner"><img src="assets/images/IQube.png" class="img-fluid" alt="Colorlib Template" style="width: 70%;"></a>
+            </div>
+            <div class="col-sm ftco-animate text-center mt-1">
+                <a class="partner"><img src="assets/images/student registration system.png" class="img-fluid" alt="Colorlib Template" style="width: 70%;"></a>
+            </div>
+        <div class="col-sm ftco-animate text-center mt-1">
+                <a  class="partner"><img src="assets/images/fudinngo.png" class="img-fluid" alt="Colorlib Template" style="width: 70%;"></a>
+            </div>
+        
+            <div class="col-sm ftco-animate text-center mt-1">
+                <a  class="partner"><img src="assets/images/vvit_sac.png" class="img-fluid" alt="Colorlib Template" style="width: 70%;"></a>
+            </div>
+         
+            
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .scroll-bar_education {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: none;
+}
+
+.scroll-bar_education a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+
+.scroll-bar_education a.active {
+  background-color: #ccc;
+}
+
+.scroll-bar_education a:hover {
+  background-color: #ddd;
+}
+  </style>
+  <!-- JavaScript code -->
+<script>
+   window.addEventListener('scroll', function() {
+  var educationSection = document.getElementById('education');
+  var professionalExperienceSection = document.getElementById('professional-experience');
+  var scrollBar = document.getElementById('scroll-bar');
+
+  if (isElementInViewport(educationSection)) {
+    scrollBar.style.display = 'block';
+    document.getElementById('education-link').classList.add('active');
+    document.getElementById('professional-experience-link').classList.remove('active');
+  } else if (isElementInViewport(professionalExperienceSection)) {
+    scrollBar.style.display = 'block';
+    document.getElementById('education-link').classList.remove('active');
+    document.getElementById('professional-experience-link').classList.add('active');
+  } else {
+    scrollBar.style.display = 'none';
+  }
+});
+
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+  </script>
+  
+
+<section class="project-section" id = "education-and-experience">
+    <div class="container">
+                <div class="col-md-12">
+                  <div  class= "page one mt-5">
+                    <div class="sec-title text-center">
+                        <h2 class="mb-4">Educational Qualification</h2>
+                    </div>
+                      
+                        <!-- <div class="card-list_education">
+                            <article class="card_education">
+                                <figure class="card-image_education">
+                                    <img src="assets/images/columbia_logo_3.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                                </figure>
+                                <div class="card-header_education">
+                                    <h2 style="text-align: center;">M.S in Applied Analytics</h2>
+                                </div>
+                                <div >
+                                    
+                                    <h5 style="text-align: center; display: block;">Columbia University</h5>
+                                    <span style="display: block;text-align: center;">(2023-2024)</span>
+                                </div>
+                                
+                            
+                                <div class="card-footer_education">
+                                    <div>
+                                        <h6 style="display: block;"> Cum.GPA : 4.1/4.0</h6>
+                                        <br>
+                                        <span style="display: inline-flex;">Courses:</span>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Supervised Learning</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Unsupervised Learning</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Story telling using data</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Research Design</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Data Engineering</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Machine Learning</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Natural Language Processing</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Python for Data Analysis</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Strategy and Analytics</li>
+                                    </div>
+                                </div>
+                            </article>
+                        </div> -->
+                        <br>
+                    <!-- VVIT education -->
+                        <div class="card-list_education">
+                            <article class="card_education">
+                                <figure class="card-image_education">
+                                    <img src="assets/images/vvit logo.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                                </figure>
+                                <div class="card-header_education">
+                                    <h2 style="text-align: center;">Information Technology in Software Engineering <br>(4 years) - JNTU Kakinada</h2>
+                                </div>
+                                <div >
+                                    
+                                    <h5 style="text-align: center; display: block;">Vasireddy Venkatadri Institute of Technology</h5>
+                                    <span style="display: block;text-align: center;">(2013-2017)</span>
+                                </div>
+                                
+                            
+                                <div class="card-footer_education">
+                                    <div>
+                                        <h6 > Credits : 180/180</span> <span> | Rank : 8<sup>th</sup>/60</h6> | Aggregate : 4581/6150 (74.49 Percentile)</span><span> 
+                                        <br><br>
+                                        <span style="display: block;">Main Courses:
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Software Engineering</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; C programming</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Java Programming</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Advanced Java programming</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Data Structures</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Advanced Data Structures</li>
+                                            
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; OOPS C++</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Android programming</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Web Technologies</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; DSA</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; DataBase Management Systems</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Software Testing</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Linux</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Computer Networks</li>
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Etc...</li>
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <br><br>
+                        <div class="sec-title text-center">
+                            <h2 class="mb-4">Professional Experience</h2>
+                        </div>
+                        <!-- <h2 class="heading text-center">  </h2> -->
+                    
+                    <!-- state street -->
+                        <div class="card-list_education">
+                            <article class="card_education">
+                                <figure class="card-image_education">
+                                    <img src="assets/images/state_street_logo.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                                </figure>
+                                <div class="card-header_education">
+                                    <h2 style="text-align: center;">Senior Software Engineer</h2>
+                                </div>
+                                <div >
+                                    
+                                    <h5 style="text-align: center; display: block;">State Street corporation Pvt Ltd, Hyderabad - India.</h5>
+                                    <span style="display: block;text-align: center;">(March 2022 - Present)</span>
+                                </div>
+                                
+                            
+                                <div class="card-footer_education">
+                                    <div>
+                                        <h6 > Roles And Responsibilites:</h6>
+                                        
+                                        <span style="display: block;">
+                                            
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Design, develop, and maintain high-quality software solutions.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Provide technical guidance and mentorship to junior developers.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Lead and participate in code reviews to ensure code quality and consistency.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Collaborate with cross-functional teams to define and refine software requirements.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Stayed up to date with the latest data analysis techniques and tools, continuously improving skills and knowledge.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Work closely with quality assurance teams to ensure proper testing and validation of software.</li>
+                                            
+                                            
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <br><br>
+                    <!-- CSS CORP -->
+                        <div class="card-list_education">
+                            <article class="card_education">
+                                <figure class="card-image_education">
+                                    <img src="assets/images/css_corp_logo.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                                </figure>
+                                <div class="card-header_education">
+                                    <h2 style="text-align: center;">Senior Engineer</h2>
+                                </div>
+                                <div >
+                                    
+                                    <h5 style="text-align: center; display: block;">CSS CORP Pvt Ltd, Bangalore - India (Societe Generale - client)</h5>
+                                    <span style="display: block;text-align: center;">(Oct 2020 - March 2022)</span>
+                                </div>                                
+                                <div class="card-footer_education">
+                                    <div>
+                                        <h6 > Roles And Responsibilites:</h6>
+                                        
+                                        <span style="display: block;">
+                                            
+                                            <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; It is Group Exchange System application used by Banking endusers and migrating using latest technologies.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; As part of this project need to design screens using ReactJS and integrate with backend APIs.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Users can produce and consumes basically exchange there transactions using this application.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Project BALLET it is a financing related project which is used for calculate BONUS and Accounting related activities across the world of all its employees.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Involved in developing the enhancements for Core module.</li>
+                                            <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Work independently with minimum supervision.</li>
+                                            
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                    <br><br>
+                    <!-- Virtusa -->
+                    <div class="card-list_education">
+                        <article class="card_education">
+                            <figure class="card-image_education">
+                                <img src="assets/images/virtusa_logo.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                            </figure>
+                            <div class="card-header_education">
+                                <h2 style="text-align: center;">Associate Engineer</h2>
+                            </div>
+                            <div >
+                                
+                                <h5 style="text-align: center; display: block;">Virtusa Consulting Services Pvt. Ltd, Hyderabad - India</h5>
+                                <span style="display: block;text-align: center;">(November 2017 - July 2020)</span>
+                            </div>                                
+                            <div class="card-footer_education">
+                                <div>
+                                    <h6 > Roles And Responsibilites:</h6>
+                                    
+                                    <span style="display: block;">
+                                        
+                                        <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Internal projects - Solutions, Need to provide the fundamntal solutions for the internal modules and will be placing in Central Repository System 
+                                            so that needed people can access it and use them according to their requirement.</li>
+                                        <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Payment control manager(PCM) ia an application which is used to send out various kinds of settlements/confirmation
+                                            SWIFT messages using IBM MQ Message Loader.</li>
+                                        <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; PCM receives transaction SWIFT messages for validation purpose from various trading systems like SUMMIT,ACBS and MUREX.</li>
+                                        <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; SWIFT messages are identified as Ex: MT103, MT210. We send these messages to Down Streams respectively will get acknowledgement.</li>
+                                        <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Trade Link Enhancements is a Private Baking application Which is used to define SPREAD amount. Deals with high net
+                                            worth clients and invest their amount in products like mutual funds, Equity, Fixed Deposite etc.</li>
+                                        <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Bank will make profit out of it, and Based on investment amount, Tenor will define Min and Max Spread%.</li>
+                                        <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Overall bank will manage the customer assets and makes profit.</li>
+                                        <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Continuously learn and improve technical skills. Involved in full product development life cycle.</li>
+                                        <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Walk through of SOE to Production Support Team and help them during implementation.</li>
+                                        
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                <br><br>
+               
+                <!-- <div class="card-list_education">
+                    <article class="card_education">
+                        <figure class="card-image_education">
+                            <img src="assets/images/instant_recipes_logo.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                        </figure>
+                        <div class="card-header_education">
+                            <h2 style="text-align: center;">Director of Instant Recipes Pvt. Ltd</h2>
+                        </div>
+                        <div >
+                           
+                            <h5 style="text-align: center; display: block;">Instant Recipes Pvt. Ltd - India</h5>
+                            <span style="display: block;text-align: center;">(March 2020 - Jan 2023)</span>
+                        </div>                                
+                        <div class="card-footer_education">
+                            <div>
+                                <h6 > Roles And Responsibilites:</h6>
+                                
+                                <span style="display: block;">
+                                    
+                                        <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Led and managed successfully the operation of the Company as Director by overseeing all aspects of operations, including production, supply chain, quality control, and customer service.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Oversaw a team of employees, providing leadership, mentorship, and performance management to ensure a high-performing and motivated workforce.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Identified and capitalized on market trends, consumer preferences, and emerging technologies to introduce innovative products and services, driving product diversification and revenue growth.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Streamlined operational processes and implemented cost-saving measures, resulting in improved efficiency, reduced waste, and increased profitability.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Successfully managed budgets, financial planning, and forecasting, ensuring the achievement of financial targets and accountability for P&L performance.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Achieved a 10% increase in production output while reducing waste by 15% through process optimization and staff training.</li>
+                                    
+                                    
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div> -->
+
+                <!-- System software development engineer -->
+                <!-- <br><br>
+               
+                <div class="card-list_education">
+                    <article class="card_education">
+                        <figure class="card-image_education">
+                            <img src="assets/images/intel_logo_intern.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                        </figure>
+                        <div class="card-header_education">
+                            <h2 style="text-align: center;">System Software Development Engineer</h2>
+                        </div>
+                        <div >
+                            
+                            <h5 style="text-align: center; display: block;">Intel Technologies Pvt. Ltd, Bangalore - India</h5>
+                            <span style="display: block;text-align: center;">(June 2019 - April 2020)</span>
+                        </div>                                
+                        <div class="card-footer_education">
+                            <div>
+                                <h6 > Roles And Responsibilites:</h6>
+                                
+                                <span style="display: block;">
+                                    
+                                        <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Conducted firmware development and validation, including debugging, code reviews, and architectural design.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Worked on communication to the Baseboard Management Controller (BMC) and validated BMC features, utilizing communication standards such as Redfish, MCTP, and I3C.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Created and implemented test plans, test cases, and procedures, ensuring adequate coverage of system specifications.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Analyzed requirements for new projects and prepared reports for high-level status meetings.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Collaborated with the international execution team to review and approve test cases, ensuring comprehensive testing.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Developed automation tools for validating BMC firmware using Python, coordinating with multiple teams across geographies.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Worked on various BMC features, including Telemetry, EWS, Eventing, Redfish validator, User Management, Virtual Media, and more.</li>
+                                    <li style="display: block; align-items: center; margin-right: 1rem;">&#8226; Worked on pre-silicon and post-silicon validation frames for BMC firmware on multiple next-generation server platforms.</li>                                                                                                       
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div> -->
+
+                    
+                <!-- Intern -->
+
+                <!-- <br><br>
+               
+                <div class="card-list_education">
+                    <article class="card_education">
+                        <figure class="card-image_education">
+                            <img src="assets/images/intel_logo_intern.png" alt="An orange painted blue, cut in half laying on a blue background" />
+                        </figure>
+                        <div class="card-header_education">
+                            <h2 style="text-align: center;">System Software Development Intern</h2>
+                        </div>
+                        <div >
+                            
+                            <h5 style="text-align: center; display: block;">Intel Technologies Pvt. Ltd, Bangalore - India</h5>
+                            <span style="display: block;text-align: center;">(July 2018 - June 2019)</span>
+                        </div>                                
+                        <div class="card-footer_education">
+                            <div>
+                                <h6 > Roles And Responsibilites:</h6>
+                                
+                                <span style="display: block;">
+                                    
+                                    <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Researched and investigated project requirements, interpreting multiple design specifications, architectural diagrams, and industry standards to ensure accurate understanding and implementation.</li>
+                                    <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Published a paper in the Intel Firmware Conference on the validation tool developed to validate BMC firmware, showcasing expertise and innovation in firmware validation.</li>
+                                    <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Collaborated on multiple proof of concepts that significantly enhanced the Validation Framework, resulting in improved efficiency and effectiveness.</li>
+                                    <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Developed, prepared, and reviewed reports and studies to identify and recommend engineering solutions, demonstrating strong analytical and problem-solving skills.</li>
+                                    <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Coordinated with contract workers, providing guidance and support on day-to-day tasks, contributing to a collaborative and productive work environment.</li>
+                                    <li style="display: inline-flex; align-items: center; margin-right: 1rem;">&#8226; Authored and published blogs in Intel Newsletters, covering topics such as Intel values and culture and on other multiple numerous topics, which garnered attention from a wider audience and showcased effective communication skills.</li>
+
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div> -->
+
+                
+            </div>
+          <!-- </div> -->
+    </div>
+</section>
+
+
+<!-- project-section end -->
+<!-- My Certifications -->
+
+<section class="project-section" id="research">
+    	<div class="container-fluid px-md-5">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="sec-title text-center">
+          	
+            <h2 class="mb-4" style="text-align: center;">Certifications</h2>
+            <p style="text-align: center;"> Exploring Knowledge</p>
+          </div>
+        </div>
+    		<div class="row">
+					<!-- Oracle cloud certifications -->
+					<div class="col-md-6 text-center d-flex ftco-animate fadeInUp  reserach-publication">
+						<!-- <a href="https://www.linkedin.com/posts/career-design-lab-columbia-university_innovation-columbiauniversity-columbiauniversitysps-activity-7050203695019368448-VoIg?utm_source=share&amp;utm_medium=member_desktop" target="_blank" class="services-1 shadow"> -->
+						<a class="services-1 shadow">
+                            <span class="icon">
+								<img src="assets/images/OCIF2023.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Oracle cloud Infrastructure</h3>
+								<p class="research-publication-desc">
+                                    I have completed Oracle Cloud Infrastructure Foundations certification. This OCI certifications ensures
+                                    a candidate is equipped with fundamental skills, providing a strong foundation for supporting Oracle products.
+                                    The Oracle Certified Professional (OCP) credential builds upon the fundamental skills demonstrated by the OCA.
+                                    OCI is one of the fastest growing cloud platforms, increasing demand for OCI expertise across the globe. 
+                                    Advance and future-proof your career by learning OCI for free with our expert-created training and globally recognized certification program.
+                                </p>
+							</div>
+						</a>
+					</div>
+					<!-- Microsoft certification fundamentals -->
+					<div class="col-md-6 text-center d-flex ftco-animate reserach-publication" >
+						<a href="#research" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/microsoft-virtual-academy.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title" >Microsoft Virtual Academy</h3>
+								<p class="research-publication-desc">
+                                    I have accomplished the Microsoft Virtual Academy foundational certification of HTML and CSS fundamentals.
+                                    By obtaining a Microsoft certification, professionals can enhance their career prospects, gain recognition in the industry, and demonstrate their expertise to employers and clients.
+                                </p>
+							</div>
+						</a>
+					</div>
+					<!-- <div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research"  class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Optimized search engine for redfish path finder</h3>
+								<p class="research-publication-desc">Published paper on “Optimized search engine forredfish path finder” at Design & Test Technology
+									Conference 2022 at Intel.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research"class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Server Platform Infrastructure simplification and efficiencies</h3>
+								<p class="research-publication-desc">Demonstrated “Server Platform Infrastructure simplification and efficiencies” at Remote technology summit
+									2022 at Intel.</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Zero-Click PreBKC CI Tool for Server Platforms</h3>
+								<p class="research-publication-desc">Published paper on “Zero-Click PreBKC CI Tool for Server Platforms” at Firmware validation summit 2022 at
+									Intel.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research" class="services-1 shadow " >
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Remote jumper control on server</h3>
+								<p class="research-publication-desc">Demonstrated “Remote jumper control on server” at Intel innovation day 2022 at Intel.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Server visualization in Data Center</h3>
+								<p class="research-publication-desc">Demonstrated “Server visualization in Data Center” at Intel Innovation Day 2022 at Intel.
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Fuzzing AMC firmware using AFL</h3>
+								<p class="research-publication-desc">DPresented posters on “Fuzzing AMC firmware using AFL” at Intel firmware summit 2020 at Intel.
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image"> 
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">AMC validation framework</h3>
+								<p class="research-publication-desc">Presented posters on “AMC validation framework” at Intel firmware summit 2020 at Intel.
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Tool to validate AMC with and without support from BMC</h3>
+								<p class="research-publication-desc">Presented posters on “Tool to validate AMC with and without support from BMC” at Intel firmware summit 2020 at Intel.
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">ML in test automation framework</h3>
+								<p class="research-publication-desc">Present poster on “ML in test automation framework” at Innovation Day 2019 at Intel.
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">A switch to BMC validation framework</h3>
+								<p class="research-publication-desc">Presented poster on “A switch to BMC validation framework” at Intel Firmware summit 2019 at Intel.
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="#research" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/intel_logo_work.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Emerging Technologies in Data Center Manageability</h3>
+								<p class="research-publication-desc">Presented poster on “Emerging Technologies in Data Center Manageability” at DCG Innovations Day 2019 at Intel.
+								</p>
+							</div>
+						</a>
+					</div> -->
+
+					<!-- VIT research -->
+					<!-- <div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3125996" target="_blank" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/elsevier.jpg" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Intrusion Detection Using Fuzzy Logic in Software Defined Networking</h3>
+								<p class="research-publication-desc">Presented paper on "Intrusion DetectionUsing Fuzzy Logic in Software Defined Networking.(International Conference of
+									Intelligent Computing Systems. ICICS conference) And Published in Elsevier Publications - Nov 2017
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="https://www.acadpubl.eu/jsi/2018-118-7-9/articles/8/39.pdf" target="_blank" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/ijpam_3.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Asymmetric cryptographic technique for the safe transfer of one-time passwords</h3>
+								<p class="research-publication-desc">Published Paper on "Asymmetric cryptographic technique for the safe transfer of one-time passwords" (International Journal of
+									Pure and Applied Mathematics Vol 118, No.8) - 2018
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="http://www.internationaljournalisar.org/ijre/old/Special-Issues/ICASCT/ICASCT1859.pdf" target="_blank" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/ijsrst.jpg" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">A Novel Method for Securing and Safe Transfer of One Time Password in Net Banking</h3>
+								<p class="research-publication-desc">Presented and Published Paper on "A Novel Method for Securing and Safe Transfer of One Time Password in Net Banking" (International
+									Conference on Applied Soft Computing Techniques ICASCT-18). International Journal of Scientific Research in Science and Technology (IJSRST) - 2018
+									
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<a href="https://www.jict.uum.edu.my/index.php/previous-issues" target="_blank" class="services-1 shadow">
+							<span class="icon">
+								<img src="assets/images/jict.png" alt="Image description" class = "reserach-publication-image">
+							</span>
+							<div class="desc research-publication-body">
+								<h3 class="mb-3 research-publication-title">Linear RSA With Blind Signature</h3>
+								<p class="research-publication-desc">Presented and Published Paper on "Linear RSA With Blind Signature" at (International Conference on Advanced Computing and Big Data Analytics) - Journal of Information Information and Communication technology (JICT)" .
+									- 2018
+								</p>
+							</div>
+						</a>
+					</div> -->
+					<!-- Plenty More-->
+					<!-- <div class="col-md-4 text-center d-flex ftco-animate reserach-publication">
+						<div style="background-image: url(assets/images/loading_gif_2.gif);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3><a href="#research">Research and Publications</a></h3>
+							</div>
+						</div>
+					</div>  -->
+				</div>
+    	</div>
+    </section>
+    <!-- certifications END-->
+
+<!-- Projects -->
+<section class="project-section" id="projects">
+    <div class="pattern-layer wow slideInRight animated" data-wow-delay="500ms" data-wow-duration="1500ms" style="background-image: url(assets/images/pattern-2.png)"></div>
+    <div class="auto-container">
+        <div class="sec-title text-center">
+            <!-- <p>Projects</p> -->
+            <h2>Projects</h2>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                <div class="news-block-one wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box"><img src="assets/images/student registration system.png" alt=""></figure>
+                            
+                            <!-- <div class="link"><a href="https://github.com/srivastavbudugutta/spotify_songs_rating_predictive_algorithm" target = "_blank"><i class="fas fa-arrow-right"></i></a></div> -->
+                        </div>
+                        <div class="lower-content">
+                          
+                            <!-- <h3><a href="https://github.com/srivastavbudugutta/spotify_songs_rating_predictive_algorithm" target = "_blank" style="text-align: center;">Songs Rating Prediction</a></h3> -->
+                            <h3> Student Registration System </h3>
+                            <p style="text-align: justify;"> This Student Registration System project is created as part of our collage Annual FEST (VIVA) celebrations.
+                                Earlier it used to be paper based model, but we decided to change and created this project which helped in many ways. It covers all the details 
+                                right from student or participant to winners. The online student Registration System is developed to fecilitate the students to submit their 
+                                online application for various participations in the FEST. Using this we can easily sort out number of participants on each section. 
+                                 <br><br>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                <div class="news-block-one wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box"><img src="assets/images/IQube.png" alt=""></figure>
+                            <figure class="image-box"><img src="assets/images/IQube.png" alt=""></figure>
+                            <figure class="image-box"><img src="assets/images/IQube.png" alt=""></figure>
+                            <figure class="image-box"><img src="assets/images/IQube.png" alt=""></figure>
+                            
+                            <!-- <div class="link"><a href="https://github.com/srivastavbudugutta/NYC_motor_vehicle_accidents_analysis" target = "_blank"><i class="fas fa-arrow-right"></i></a></div> -->
+                        </div>
+                        <div class="lower-content">
+                            
+                            <!-- <h3><a href="https://github.com/srivastavbudugutta/NYC_motor_vehicle_accidents_analysis" target = "_blank" style="text-align: center;">NYC Motor Vehicle Accidents Rate Analysis</a></h3> -->
+                            <h3> I Qube Digitals software</h3>
+                            <p style="text-align: justify;"> This I Qube Digitals project is a real time project, the users are using this software in their day to day business work.
+                                This project contains ledger king of operations, like business profits and expenses which gives overall insights of business. along with current work progress 
+                                and future orders and requires staff and expected capital remaining stock etc..
+                                I Qube Digitals is a medium level industry or a privaate company which provides various fecilities to general customers. This project helps to Improve their 
+                                efficiency within their daily business operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                <div class="news-block-one wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box"><img src="assets/images/fudinngo.png" alt=""></figure>
+                            
+                            <!-- <div class="link"><a href="https://github.com/srivastavbudugutta/statistical_analysis_2d_vs_3d_ads" target="_blank"><i class="fas fa-arrow-right"></i></a></div> -->
+                        </div>
+                        <div class="lower-content">
+
+                           <!--  <h3><a href="https://github.com/srivastavbudugutta/statistical_analysis_2d_vs_3d_ads" target="_blank" style="text-align: center;">Advertisement Strategy <br>2D vs 3D</a></h3> -->
+                           <h3>Fudinngo application</h3>
+                            <p style="text-align: justify;">The project called Fudinngo is an Online food delivery application which works in a reaal time world.
+                            this application has tie ups with local restaurents, cafes and bakeries, users can order their food in real time using this application.
+                            this application actually works as a Swiggy platform with few basic functionalites. similarly the admin can see the numbers pending orders and 
+                            delivery status etc.. Even it has integrated with payment gate way too.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <!-- <div class="col-lg-4 col-md-6 col-sm-12 news-block" style="margin-top: 40px;">
+                <div class="news-block-one wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box"><img src="assets/images/finance_analytics.png" alt=""></figure>
+                            
+                            <div class="link"><a href="https://github.com/srivastavbudugutta/financial_analytics" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                        <div class="lower-content">
+
+                            <h3><a href="https://github.com/srivastavbudugutta/financial_analytics" target="_blank" style="text-align: center;">Financial Analytics Solution for Software as Service (Saas) company</a></h3>
+                            <p style="text-align: justify;">Project emphasised on analysing possible approaches when a company (SaaS)
+                            has some of possible option such as "Building in-house Technology" or "Collaborate with Startup" or "Do nothing" to 
+                            advanance the companys product in the market. Based
+                        on financial analytics that was applied on ROI, Net Present Value, Internal Rate Of Return subjected with Up-front cost, Annual Revenue groth etc.. factors, I have Provided
+                    recommendation that CEO of company need to take based on these values.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 news-block" style="margin-top: 40px;">
+                <div class="news-block-one wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box"><img src="assets/images/marketing_analytics.png" alt=""></figure>
+                            
+                            <div class="link"><a href="https://github.com/srivastavbudugutta/marketing_analytics" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                        <div class="lower-content">
+
+                            <h3><a href="https://github.com/srivastavbudugutta/marketing_analytics" target="_blank" style="text-align: center;">Marketing Analytics project for grocery delivery company on customer base.</a></h3>
+                            <p style="text-align: justify;">conducted an in-depth analysis on grocery delivery company customer data to address key questions from the CFO regarding customer segments and customer acquisition.
+                                 Utilized a dataset to provide insights and strategic recommendations.<br><br></p><br><br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+<!-- news-section end -->
+<!-- Awards and Recog -->
+
+
+<section class="project-section" id="awards">
+    <div class="auto-container">
+        <div class="sec-title text-center">
+            <h2 class="mb-4">Awards, Certificates and Recognizations</h2>
+        <p>Embracing My Journey: Celebrating Personal Achievements and Milestones</p>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/viva_techQuiz.jpg" alt="">
+                            </figure>
+                            <a href="assets/images/viva_techQuiz.jpg" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="#awards">VIVA VVIT certificate</a></h3>
+                            <span>This is a participation certificate of viva vvit techinical quiz.</span>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ALL AWARDS (cultural hero) -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/project_expo.jpg" alt="">
+                            </figure>
+                            <a href="assets/images/project_expo.jpg" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="lower-content">
+                            <!-- <h3><a href="https://www.linkedin.com/posts/srivastavbudugutta_iamintel-intel-activity-6933643943423152128-WyUJ?utm_source=share&amp;utm_medium=member_desktop" target="_blank">Intel Culture Hero Award</a></h3> -->
+                            <h3> Project Expo Certification</h3>
+                            <span>Received this certificate of participation in a project Expo.</span>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- gold coin award -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/KLU_cert.jpg" alt="">
+                            </figure>
+                            <a href="assets/images/KLU_cert.jpg" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="lower-content">
+                            <!-- <h3><a href="https://www.linkedin.com/posts/srivastavbudugutta_iamintel-intel-activity-6933643943423152128-WyUJ?utm_source=share&amp;utm_medium=member_desktop" target="_blank">Intel Gold Coin Award</a></h3> -->
+                            <h3>Participation certificate</h3>
+                            <span>Received this particiaption certificate which was held in KL University on tech project expo.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yellow Belt -->
+            
+
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/viva_vvit_PPT.jpg" alt="">
+                            </figure>
+                            <a href="assets/images/viva_vvit_PPT.jpg" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="lower-content">
+                            <!-- <h3><a href="https://www.linkedin.com/posts/srivastavbudugutta_product-assurance-and-security-yellow-belt-activity-6915553660441677824-HP5h?utm_source=share&amp;utm_medium=member_desktop" target="_blank">Product Assurance Security Belt (Yellow)</a></h3> -->
+                            <h3>Best PPT certificate</h3>
+                            <span>I received this certificate for giving besst power point presentation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- White Belt -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/RVRJC_PPT.jpg" alt="">
+                            </figure>
+                            <a href="assets/images/RVRJC_PPT.jpg" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="lower-content">
+                            <!-- <h3><a href="https://www.linkedin.com/posts/srivastavbudugutta_product-assurance-and-security-white-belt-activity-6783226976204402688-og0h?utm_source=share&amp;utm_medium=member_desktop" target="_blank">Product Assurance Security Belt (White)</a></h3> -->
+                            <h3>RVR & JC fest participation</h3>
+                            <span>I received this certificate of particiapation in RVR&JC campus annual fest.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIC -->
+            
+
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/workshop.jpg" alt="">
+                            </figure>
+                            <a href="assets/images/workshop.jpg" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="#awards">Attended Workshop</a></h3>
+                            <span>Obtained this certificate as I attended Weblogic workshop.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- DCG project Innovation day -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/sololearn_PHP.jpg" alt="">
+                            </figure>
+                            <a href="assets/images/sololearn_PHP.jpg" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="#awards">solo learn certificate</a></h3>
+                            <span>Received this certificate as I completed PHP fundamentals in Solo Learn platform</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Niv Recog-->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/sololearn_SQL.jpg" alt="">
+                            </figure>
+                            <a href="assets/images/sololearn_SQL.jpg" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="#awards">solo learn certificate</a></h3>
+                            <span>Received this certificate as I completed SQL fundamentals in Solo Learn platform.</span>
+                            <!--<p>&nbsp;&nbsp;</p>
+                            <p>&nbsp;&nbsp;</p> -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- lab 1-->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/MVA_html&css.png" alt="">
+                            </figure>
+                            <a href="assets/images/MVA_html&css.png" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="#awards">Microsoft-Virtual-Academy</a></h3>
+                            <span>Obtained certificate Microsoft virtual academy HTML & CSS fundamentals</span>
+                            <!-- <br><br> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Plenty More-->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 project-block">
+                <div class="project-block-one wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-holder">
+                            <figure class="image-box">
+                                <img src="assets/images/loading_gif_2.gif" alt="">
+                            </figure>
+                            <a href="assets/images/loading_gif_2.gif" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    (function($) {
+	
+	"use strict";
+	
+	// Testimonial Carousel
+	if ($('.testimonial-carousel-new').length) {
+		$('.testimonial-carousel-new').owlCarousel({
+			animateOut: 'slideOutDown',
+		    animateIn: 'zoomIn',
+			loop:true,
+			margin:0,
+			nav:true,
+			smartSpeed: 300,
+			autoplay: 7000,
+			navText: [ '<span class="arrow-left"></span>', '<span class="arrow-right"></span>' ],
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				800:{
+					items:1
+				},
+				1024:{
+					items:1
+				}
+			}
+		});  		
+	}
+	
+})(window.jQuery);
+</script>
+
+
+
+<!-- ======= Testimonials Section ======= -->
+
+    
+<section class="project-section" id="testimonial" style="background-image: url(assets/images/testimonial_bg.jpg);">
+    <!-- <div class="container">
+
+        <div class="heading white-heading">
+            Testimonial
+        </div>
+        <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+         
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="testimonial4_slide">
+                        <img src="assets/images/profile_icon_2.jpg" class="img-circle img-responsive" /><br>
+                        <h4>Sharad Kethan</h4>
+                        <h4>Cloud Engineering Manager at Intel</h4>
+                        <div class = "p-content">
+                        <p style="text-align: left;">Srivastav has worked in my organization for more than 3 years and I can confidently say that he is a top-notch engineer with a strong work ethic and a dedication to excellence.
+
+                        <br><br>As a leader in our firmware validation team, Srivastav consistently took the initiative to improve processes and ensure that our products were of the highest quality. His thorough and detail-oriented approach to work resulted in numerous successful projects and a strong track record of delivering results. In addition to his technical skills, Srivastav is a team player with excellent communication skills. He is able to work effectively with the stakeholders and is always willing to go above and beyond to help the team achieve its goals.
+                            
+                        <br><br>Srivastav will be an asset to any organization.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial4_slide">
+                        <img src="assets/images/sujoy.jpg" class="img-circle img-responsive" /><br>
+                        <h4>Syjoy Ray</h4>
+                        <h4>Firmware Architect at Intel</h4>
+                        <div class = "p-content">
+                        <p>I worked with Srivastav for a few months. He was working as a validation lead for our next-generation OpenBMC-based platform. During this short interaction, I found that he is technically a very sound engineer having in-depth knowledge of OpenBMC-based products and server architecture. I wish him every success in his next endeavor. I am sure he will excel in whatever he does.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial4_slide">
+                        
+                        <img src="assets/images/mayank.jpg" class="img-circle img-responsive" /><br>
+                        <h4>Mayank</h4>
+                        <h4>Cloud Engineer at Intel</h4>
+                        <div class = "p-content">
+                        <p>Srivastav was a great mentor and an inspiration to take up challenges and learn something new everyday. He also makes the activity of thinking of concepts and putting that into an innovative solution very simple.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial4_slide">
+                        
+                        <img src="assets/images/Muskan_pic.jpg" class="img-circle img-responsive" /><br>
+                        <h4>Muskan Kumar</h4>
+                        <h4>Cloud Engineer at Intel</h4>
+                        <div class = "p-content">
+                        <p>I have worked with Srivastav for around 2 years now and Srivastav, undoubtedly has been the key player of our team. It was a great honor to learn from him. He has been my go-to person, is one of the best in his field and always willing to share best practices. </p>
+
+                        <p>His fearlessness to difficult questions and transparency in sharing his knowledge, role-models technical leadership attributes for other team members to follow. He proactively strives hard and smart to bring quality to the product we deliver and the tasks we take up. He pays attention to details and ensures highest standards of quality on our products and enable team to have quality and security focus. He also participates and encourages team members to contribute in discussions / code reviews, and innovation forums. </p>
+                        
+                        <p>Srivastav stands out in his passion to support our Team at Intel. Srivastav will definitely be an asset for any organization he works for.</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial4_slide">
+                        
+                        <img src="assets/images/hema.jpg" class="img-circle img-responsive" /><br>
+                        <h4>Hema</h4>
+                        <h4>Cloud Engineer at Intel</h4>
+                        <p>Srivastav has been a great peer to work with at Intel. He really is a jack of all trades and knows the ins and outs of OpenBMC. He is not only extremely knowledgeable, but also very detail oriented and passionate person. I would highly recommend his technical and analytical capabilities.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial4_slide">
+                        
+                        <img src="assets/images/saleem.jpg" class="img-circle img-responsive" /><br>
+                        <h4>Saleem Javid</h4>
+                        <h4>Founder at SelectDine "Top 20 Tech Founders"</h4>
+                        <p>"Good Technical Knowledge"</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div> -->
+</section>
+<!-- End Testimonials Section -->
+
+   
+
+
+
+
+
+    <!-- main-footer -->
+    <footer class="main-footer" id = "contact">
+        <div class="auto-container">
+            <div class="footer-top">
+                <div class="widget-section wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="footer-column">
+                        <div class="footer-widget contact-widget" style="display: flex; flex-direction: column; align-items: center;">
+                            <div class="widget-title" style="text-align: center;">
+                                <h1><b>CONTACT INFORMATION</b></h1>
+                            </div>
+                            <div class="widget-content" style="text-align: center;">
+                                <ul>
+                                    <li><h3>DILEEP KUMAR KOTA</h3></li>
+                                    <li><h3>+91 9032560986</h3></li>
+                                    <li><h5><a href="mailto:kotadileep2@gmail.com">kotadileep2@gmail.com</a></h5></li>
+                                </ul>
+                            <br>
+                                <ul class="social-links clearfix" style="display: flex; justify-content: center;">
+                                    
+                                    <li class="ftco-animate" style="margin-right: 10px;">
+                                        <a href="https://www.linkedin.com/in/dileep-kumar-kota-4756b21b1/" target="_blank">
+                                          <span class="fab fa-linkedin fa-3x fancy-icon"></span>
+                                        </a>
+                                      </li>
+                                      <li class="ftco-animate" style="margin-right: 10px;">
+                                        <a href="https://github.com/Dileep-kota" target="_blank">
+                                          <span class="fab fa-github fa-3x fancy-icon"></span>
+                                        </a>
+                                      </li>
+                                      <!--<li class="ftco-animate" style="margin-right: 10px;">
+                                        <a href="https://medium.com/@srivastavbudugutta95" target="_blank">
+                                          <span class="fab fa-medium fa-3x fancy-icon"></span>
+                                        </a>
+                                      </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- main-footer end -->
+
+   
+
+<!--Scroll to top-->
+<button class="scroll-top scroll-to-target" data-target="html">
+    <span class="fa fa-arrow-up"></span>
+</button>
+
+
+<!-- jequery plugins -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/validation.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/scrollbar.js"></script>
+<script src="assets/js/tilt.jquery.js"></script>
+<script src="assets/js/jQuery.style.switcher.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/text_animation.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
+
